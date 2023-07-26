@@ -9,10 +9,8 @@ fun main(){
 
     var opcion: String = "si"
     var intento = 3
-    var opcion1:Int=0
 
-    var saldo: Int = 4500
-
+    var saldo: Long = 4500
 
     //------------- Funciones ---------------------
     fun saca() {
@@ -107,7 +105,7 @@ fun main(){
     fun recarga(){
         println("Has Ingresado A Recargar")
         println("Por Favor Ingresa El Monto A Recargar")
-        var recarga:Int= readln()!!.toInt()
+        var recarga:Long= readln()!!.toLong()
 
         println("Estas Seguro De Recargar $recarga")
         var desi:String= readln()!!.toString()
@@ -154,7 +152,7 @@ fun main(){
                     recarga()
 
                 } else if (opcion1 == 4) {
-                    break
+                    println("A Continuacion Se Mostrara Un Mensaje Preguntando Si Deseas Realizar Otra Opcion, Por Favor Digitar No :3")
                 }else{
                     println("Opcion No Existente Por Favor Vuelva A Intentar")
                 }
@@ -171,8 +169,6 @@ fun main(){
         }
 
         if (opcion=="no"){
-            break
-        }else if (opcion1==4){
             break
         }
 
